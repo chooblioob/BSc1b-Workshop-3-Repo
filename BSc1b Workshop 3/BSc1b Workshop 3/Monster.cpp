@@ -4,7 +4,7 @@ Monster::Monster()
 	this->name = "Unidentified Monster Name";
 	this->type = "Undefined Type";
 	this->health = 100;
-	this->attackStat = 0;
+	this->attackStat = 55;
 }
 
 Monster::Monster(string nName, string nType, int nAttackStat)
@@ -29,4 +29,8 @@ int Monster::getHealth() {
 
 int Monster::getAttackStat() {
 	return this->attackStat;
+}
+
+void Monster::getDamage(int inflictedDamage) {
+
 }
